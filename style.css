@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #5c3d2e;
+  margin-bottom: 30px;
+}
+
+/* Imagen principal */
+body > img {
+  display: block;
+  margin: 0 auto 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de signos */
+ol {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cada signo */
+ol li {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 25px;
+  color: #4a2c1e;
+}
+
+/* Imagen de cada signo */
+ol img {
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+ol img:hover {
+  transform: scale(1.05);
+}
+
+/* Descripción de cada signo */
+ol p {
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  background-color: #fff5ec;
+  border-left: 4px solid #e6a57e;
+  border-radius: 4px;
+}
