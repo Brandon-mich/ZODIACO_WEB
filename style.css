@@ -1,61 +1,92 @@
-/* Estilos generales */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y texto general */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdf6f0;
-  color: #333;
-  margin: 0;
-  padding: 20px;
-  line-height: 1.6;
+  background: linear-gradient(to right, #1e1e2f, #2b2b45);
+  color: #f2f2f2;
+  padding: 40px 20px;
 }
 
 /* Título principal */
 h1 {
   text-align: center;
-  font-size: 2.5em;
-  color: #5c3d2e;
-  margin-bottom: 30px;
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #ffcc70;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-/* Imagen principal */
+/* Imagen principal del top */
 body > img {
   display: block;
-  margin: 0 auto 40px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 50px auto;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 204, 112, 0.5);
 }
 
-/* Lista de signos */
+/* Lista ordenada (signos) */
 ol {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
+  list-style: none;
+  padding: 0;
 }
 
-/* Cada signo */
+/* Cada signo (bloque) */
 ol li {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-top: 25px;
-  color: #4a2c1e;
+  margin-top: 40px;
+  font-size: 1.4em;
+  color: #ffb86c;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-/* Imagen de cada signo */
+/* Imágenes de signos */
 ol img {
+  display: block;
   margin: 10px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 204, 112, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 ol img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 204, 112, 0.8);
 }
 
-/* Descripción de cada signo */
+/* Descripciones de signos */
 ol p {
-  margin: 10px 0 20px 0;
-  padding: 10px;
-  background-color: #fff5ec;
-  border-left: 4px solid #e6a57e;
-  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px 20px;
+  border-left: 5px solid #ffcc70;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive para pantallas chicas */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  ol li {
+    font-size: 1.1em;
+  }
+
+  ol img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
